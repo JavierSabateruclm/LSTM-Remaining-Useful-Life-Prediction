@@ -1,0 +1,47 @@
+# LSTM Remaining Useful Life Prediction
+
+Repositorio asociado al Trabajo Fin de Grado:
+
+Desarrollo de un modelo de mantenimiento predictivo para motores turbofán basado en técnicas de inteligencia artificial
+
+Autor: Javier Sabater Pallarés  
+Universidad de Castilla-La Mancha  
+Grado en Ingeniería Aeroespacial
+
+## Descripción
+
+Este repositorio contiene el código desarrollado para la predicción de la vida útil restante (Remaining Useful Life, RUL) de motores turbofán mediante redes neuronales LSTM.
+
+Se comparan dos arquitecturas:
+
+- Arquitectura LSTM convencional.
+- Arquitectura LSTM con reducción progresiva del número de neuronas.
+
+## Estructura
+
+- `code/`: código de entrenamiento, evaluación y generación de resultados.
+- `data/`: archivos del subconjunto NASA C-MAPSS FD001.
+- `requirements.txt`: principales dependencias empleadas.
+
+## Conjunto de datos
+
+El trabajo utiliza el subconjunto FD001 del conjunto de datos NASA C-MAPSS.
+
+Archivos empleados:
+
+- `train_FD001.txt`
+- `test_FD001.txt`
+- `RUL_FD001.txt`
+
+## Métricas
+
+Los modelos se evalúan mediante:
+
+- RMSE
+- MAE
+- MSE
+- NASA Score
+
+## Uso
+
+El código ha sido desarrollado con Python y TensorFlow/Keras. Antes de ejecutarlo deben comprobarse las rutas empleadas para cargar los archivos del conjunto de datos.
